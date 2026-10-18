@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Information Security</title>
+</head>
+<body>
+    <header>
+        <h1>Introduction to Information Security</h1>
+        <p>Learning how to protect information in a digital world.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#importance">Importance</a></li>
+            <li><a href="#practices">Security Practices</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Information Security</h2>
+            <p>
+                Information security focuses on protecting data,
+                computer systems, and networks from unauthorized access,
+                damage, and theft.
+            </p>
+
+            <img
+                src="https://placehold.co/600x300?text=Information+Security"
+                alt="Illustration representing information security and digital data protection"
+            >
+        </section>
+
+        <section id="importance">
+            <h2>Why Information Security Matters</h2>
+            <article>
+                <h3>Protecting Personal Information</h3>
+                <p>
+                    Security practices help protect passwords,
+                    financial records, and other sensitive information.
+                </p>
+            </article>
+
+            <article>
+                <h3>Preventing Cyberattacks</h3>
+                <p>
+                    Organizations use security tools and procedures
+                    to reduce the risk of phishing, malware, and data breaches.
+                </p>
+            </article>
+        </section>
+
+        <section id="practices">
+            <h2>Basic Security Practices</h2>
+            <p>Everyone can improve their online safety by following these steps:</p>
+            <ol>
+                <li>Use strong, unique passwords.</li>
+                <li>Enable multi-factor authentication.</li>
+                <li>Keep software and devices updated.</li>
+                <li>Avoid suspicious links and email attachments.</li>
+                <li>Back up important files regularly.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created as an introduction to information security.</p>
+    </footer>
+</body>
+</html>
