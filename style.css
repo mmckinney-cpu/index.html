@@ -1,51 +1,138 @@
-/* General page styling */
+
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f0f4f8;
-    color: #243447;
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-}
-
-/* Type selector */
-h1 {
-    color: #156082;
-    text-align: center;
-    border-bottom: 3px solid #e09f3e;
-    padding: 15px;
-    margin-bottom: 25px;
-}
-
-/* Class selector */
-.content {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border: 2px solid #156082;
-    border-radius: 10px;
-}
-
-/* ID selector */
-#main-title {
-    background-color: #dceaf2;
-    padding: 15px;
-    margin: 15px;
-    border: 2px solid #e09f3e;
-}
-
-/* Additional type selector */
-p {
+    background-color: #f0f4f8;
+    color: #263238;
     line-height: 1.6;
-    margin: 15px;
-    padding: 10px;
 }
 
-/* Button styling */
-button {
-    background-color: #156082;
+header {
+    background-color: #234e52;
     color: white;
-    padding: 12px 20px;
-    border: 2px solid #e09f3e;
-    border-radius: 6px;
-    cursor: pointer;
+    padding: 24px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 16px;
+}
+
+/* FLEXBOX NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 32px 24px;
+}
+
+.intro {
+    background-color: white;
+    padding: 32px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* CSS GRID MULTI-COLUMN LAYOUT */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background-color: white;
+    padding: 24px;
+    border: 2px solid #d6a84f;
+    border-radius: 10px;
+    min-width: 0;
+}
+
+.card h3 {
+    color: #234e52;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #234e52;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    margin-top: 32px;
+}
+
+/* TABLET LAYOUT */
+
+@media screen and (max-width: 768px) {
+
+    main {
+        padding: 24px 16px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .intro {
+        padding: 24px;
+    }
+}
+
+/* MOBILE LAYOUT */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        padding: 16px;
+    }
+
+    .card {
+        padding: 16px;
+    }
 }
