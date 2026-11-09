@@ -1,0 +1,51 @@
+/* General page styling */
+body {
+    background-color: #f0f4f8;
+    color: #243447;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Type selector */
+h1 {
+    color: #156082;
+    text-align: center;
+    border-bottom: 3px solid #e09f3e;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+/* Class selector */
+.content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #156082;
+    border-radius: 10px;
+}
+
+/* ID selector */
+#main-title {
+    background-color: #dceaf2;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid #e09f3e;
+}
+
+/* Additional type selector */
+p {
+    line-height: 1.6;
+    margin: 15px;
+    padding: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #156082;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid #e09f3e;
+    border-radius: 6px;
+    cursor: pointer;
+}
